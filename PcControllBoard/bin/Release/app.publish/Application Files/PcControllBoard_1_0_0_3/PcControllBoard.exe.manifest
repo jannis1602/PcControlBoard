@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PcControllBoard.exe" version="1.0.0.3" publicKeyToken="3af82e4718ad4662" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="ProgrammIcon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PcControllBoard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PcControllBoard.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC-Manifestoptionen
+             Wenn Sie die Ebene der Benutzerkontensteuerung für Windows ändern möchten, ersetzen Sie den 
+             Knoten "requestedExecutionLevel" wie folgt.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Durch Angabe des Elements "requestedExecutionLevel" wird die Datei- und Registrierungsvirtualisierung deaktiviert. 
+            Entfernen Sie dieses Element, wenn diese Virtualisierung aus Gründen der Abwärtskompatibilität
+            für die Anwendung erforderlich ist.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NAudio.dll" size="513536">
+      <assemblyIdentity name="NAudio" version="1.10.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vEusw7iyjYmPFnG3nyFsykOfletgzTLT4+yvvsrEJ4A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PcControllBoard.exe" size="388024">
+      <assemblyIdentity name="PcControllBoard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pRGzs33WXhMHlS3A2wlMnzRSUr5oZUKKUtH/rk0A/nI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QRCoder.dll" size="121344">
+      <assemblyIdentity name="QRCoder" version="1.3.9.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Rrr06qtdpr8MTOkaoReAPwLk40NElx64q6oeAQFxphg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsInput.dll" size="22528">
+      <assemblyIdentity name="WindowsInput" version="1.0.4.0" publicKeyToken="9B287F7DC5073CAD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gRENRCVjl/DzxXKiDKlLtMZp5d6J+TSKutJj+9gcVLk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="PcControllBoard.exe.config" size="1179">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9B7Z704RCCLs9rVsSvxp2bkyrxdtVzrlVYdKMcLKTxI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ProgrammIcon.ico" size="107970">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZvNU0yA3YJN/D5NaMt9tNvuQk3SNQN5rJnz9zP3rUd0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Eine Liste der Windows-Versionen, unter denen diese Anwendung getestet
+           und für die sie entwickelt wurde. Wenn Sie die Auskommentierung der entsprechenden Elemente aufheben,
+           wird von Windows automatisch die kompatibelste Umgebung ausgewählt. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=JANNISPC\mattl" issuerKeyHash="6a71ae38ffbbe6670396318153852fe0471c6703" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>oSD5+blBp4kH3gyQmn+iRhs8JSuMjJ8cloKljonO16g=</DigestValue></Reference></SignedInfo><SignatureValue>a7GosmYg+AJ4mNkec8y3cjPF81SvMFLM89OUdf76O9/VpVkfFJcDsl7TckJLK0pbGDnkQvHv8h2Z1vaSHJmyarsYXJALKH7MkKHq6oQ2vb/MJ+Y7ARNVeWJ+ynjeTocrrSqOAj+V/23L+DBBT8hJGQkjPTn9OavoUzSxHIpoA6w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pitXJlKBZmgFtZBhesEhl13+03iijQ7HWj+UqOcTmTI/amktk2lWV0oCqqCj2ES5NM317k06ydHOKB3VCUxkkm2CFaAJ22jcfMfNID2ilgUTD0pJna8XvbUk4ykMCfhevxTP0a9HatArzKB/22ukABZG41ZwMYkfbPv305ZIAW0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a8d7ce898ea582961c9f8c8c2b253c1b46a27f9a900cde0789a741b9f9f920a1" Description="" Url=""><as:assemblyIdentity name="PcControllBoard.exe" version="1.0.0.3" publicKeyToken="3af82e4718ad4662" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JANNISPC\mattl</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bZVoVNqMz8NKpkNJY4HtKf2472bq52Cp1/tBhPbwSzA=</DigestValue></Reference></SignedInfo><SignatureValue>epleNcLMEg/YMHdT5j/wM9VaU0J1XFmKRVHW0+9olEayQ+UHDcV1rH1ClbWRMJPOpyZWzYKLGB4Y+PyK/sYCDb24Vz09417OWDcclpWUy5aTVhUCvY8gWwNmbY2umz+j8oCb0DZ1EKDw2prFKZ2L7n5cKii69AL4qti3IXDQlOY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pitXJlKBZmgFtZBhesEhl13+03iijQ7HWj+UqOcTmTI/amktk2lWV0oCqqCj2ES5NM317k06ydHOKB3VCUxkkm2CFaAJ22jcfMfNID2ilgUTD0pJna8XvbUk4ykMCfhevxTP0a9HatArzKB/22ukABZG41ZwMYkfbPv305ZIAW0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQKu9MmhfMCqJLnK9W3+9xCTANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwASgBBAE4ATgBJAFMAUABDAFwAbQBhAHQAdABsMB4XDTIwMDcwMjEwMjM1MloXDTIxMDcwMjE2MjM1MlowJzElMCMGA1UEAx4cAEoAQQBOAE4ASQBTAFAAQwBcAG0AYQB0AHQAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEApitXJlKBZmgFtZBhesEhl13+03iijQ7HWj+UqOcTmTI/amktk2lWV0oCqqCj2ES5NM317k06ydHOKB3VCUxkkm2CFaAJ22jcfMfNID2ilgUTD0pJna8XvbUk4ykMCfhevxTP0a9HatArzKB/22ukABZG41ZwMYkfbPv305ZIAW0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAJkJLHupgnuGHiCN4hWXAtsILFsyv4FJ85cspgb3ho6SXbOanbfzzi1BYYF3JWozcM5NIfN7XlUb4dnM5XbCQUcfbjw+P8qne30dgtBj3ElwrSU+jVf/X6ozOC1G4NYw1OFuNun1Z3uR3Z4HTZPenpW8Qd7rzFbb1h8FOcKMflLQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

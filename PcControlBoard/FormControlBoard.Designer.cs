@@ -108,9 +108,9 @@ namespace PcControlBoard
             this.lbl_window_title.Location = new System.Drawing.Point(2, 5);
             this.lbl_window_title.Margin = new System.Windows.Forms.Padding(2);
             this.lbl_window_title.Name = "lbl_window_title";
-            this.lbl_window_title.Size = new System.Drawing.Size(217, 20);
+            this.lbl_window_title.Size = new System.Drawing.Size(171, 20);
             this.lbl_window_title.TabIndex = 0;
-            this.lbl_window_title.Text = "PcControllBoard v.0.1.1 alpha";
+            this.lbl_window_title.Text = "PcControlBoard v.0.1.1";
             // 
             // btn_panel
             // 
